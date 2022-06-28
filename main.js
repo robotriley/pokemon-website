@@ -9,6 +9,7 @@ const pokemon = [
 
 const containerDiv = document.querySelector('#container')
 const newBtn = document.querySelector('#new-pokemon-btn')
+const rosterDiv = document.querySelector('#roster')
 
 newBtn.addEventListener('click', () => {
     let num = prompt('ENTER A POKEMON NUMBER')
@@ -34,7 +35,7 @@ pokemon.map((element, index) => {
     })
     img.src = imgUrl    
     div.append(img, h3, audio)
-    containerDiv.append(div)
+    containerDiv.append(div) //append the img, header and audio elements
 })
 
 
